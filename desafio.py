@@ -12,9 +12,11 @@ while (True):
     turnos = list(range(entrada_1[1] - 1, -1, -1))
 
     for turno in turnos:
+
         indice = (turno)
         permutacoes = list(range(entrada_2[turno]))
         for permutacao in permutacoes:
+            print(permutacoes)
             aux = list_elementos[indice]
             list_elementos[indice] = list_elementos[indice + 1]
             list_elementos[indice + 1] = aux
